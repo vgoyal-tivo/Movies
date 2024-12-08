@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/movie_poster"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:contentDescription="@string/trending_movies"
+        android:scaleType="centerInside"
+         />
+
+   <LinearLayout
+       android:layout_marginTop="20dp"
+       android:layout_width="match_parent"
+       android:paddingVertical="8dp"
+       android:orientation="horizontal"
+       android:weightSum="3"
+       android:layout_height="wrap_content">
+       <TextView
+           android:id="@+id/movie_title"
+           android:layout_width="match_parent"
+           android:layout_weight="2"
+           android:layout_marginEnd="8dp"
+           android:layout_height="wrap_content"
+           android:textSize="24sp"
+           android:layout_marginTop="8dp" />
+
+
+       <ImageButton
+           android:id="@+id/bookmarkBtn"
+           android:layout_width="36dp"
+           android:layout_height="36dp"
+           android:text="@string/bookmark_string"
+           android:layout_weight="1"
+           android:src="@drawable/ic_bookmark"
+           android:background="?android:attr/selectableItemBackground"
+           android:textColor="#FFFFFF"/>
+   </LinearLayout>
+
+    <TextView
+        android:id="@+id/movie_overview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+
+        android:text="Hello " />
+
+</LinearLayout>
